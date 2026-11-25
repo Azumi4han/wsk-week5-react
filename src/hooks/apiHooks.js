@@ -47,4 +47,43 @@ const useMedia = () => {
   return {mediaArray, error};
 };
 
-export {useMedia};
+const useAuthentication = () => {
+  const postLogin = async (inputs) => {
+    const fetchOptions = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(inputs),
+    };
+    return await fetchData(`${authApi}/auth/login`, fetchOptions);
+  };
+
+  return {postLogin};
+};
+
+const useUser = () => {
+  const getUserByToken = async (token) => {
+    const fetchOptions = {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    };
+    return await fetchData(`${authApi}/users/token`, fetchOptions);
+  };
+
+  const postUser = async (inputs) => {
+    const fetchOptions = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(inputs),
+    };
+    return await fetchData(`${authApi}/users`, fetchOptions);
+  };
+
+  return {getUserByToken, postUser};
+};
+
+export {useMedia, useAuthentication, useUser};

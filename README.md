@@ -2,7 +2,7 @@
 
 React exercises for the Web Applications course.
 
-Open [this app](https://users.metropolia.fi/~igorkarp/custom-hooks/) to view it in the browser.
+Open [this app](https://users.metropolia.fi/~igorkarp/forms/) to view it in the browser.
 
 ## Branches
 
