@@ -2,7 +2,7 @@
 
 React exercises for the Web Applications course.
 
-Open [this app](https://users.metropolia.fi/~igorkarp/context/) to view it in the browser.
+Open [this app](https://users.metropolia.fi/~igorkarp/upload/) to view it in the browser.
 
 ## Branches
 

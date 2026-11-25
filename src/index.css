@@ -235,3 +235,12 @@ dt {
 dd {
   margin: 0;
 }
+
+/* upload preview */
+img.preview {
+  width: 200px;
+  height: 200px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
